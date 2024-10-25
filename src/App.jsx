@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <main className='container mx-auto px-5'>
+      <main className='container mx-auto max-w-[1200px] px-5'>
         
         <Hero/>
         <AboutMe/>
