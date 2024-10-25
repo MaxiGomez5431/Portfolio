@@ -2,18 +2,18 @@ import cv from "../assets/svg/cv-icon.svg"
 import github from "../assets/svg/github-icon.svg"
 import linkedin from "../assets/svg/linkedin-icon.svg"
 
-function SocialIcon() {
+function SocialIcons({style}) {
  
 
   return (
     <div className="flex justify-center">
-      <img className="h-10 w-10" src={github}></img>
-      <img className="h-10 w-10" src={linkedin}></img>
-      <img className="h-10 w-10" src={cv}></img>
+      <img className={style} src={github}></img>
+      <img className={style} src={linkedin}></img>
+      <img className={style} src={cv}></img>
     </div>
     
 
   )
 }
 
-export default SocialIcon
+export default SocialIcons
