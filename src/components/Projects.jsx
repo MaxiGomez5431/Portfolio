@@ -1,10 +1,17 @@
+import Title from "./Title"
+
 function Projects() {
  
 
   return (
-    
-    <div>Hola</div>
+    <>
+      <Title>Mis projectos</Title>
 
+      <section>
+
+
+      </section>
+    </>
   )
 }
 
