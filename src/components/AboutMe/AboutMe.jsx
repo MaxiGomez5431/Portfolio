@@ -1,10 +1,12 @@
 import Title from '../Title'
 import AboutMeCard from './AboutMeCard'
-import cv from "../../assets/svg/cv-icon.svg"
+import {IconUserGroup, IconBxsUserCircle, IconResponsive, IconBook} from '../Icons'
+
 
 
 function AboutMe() {
  
+  let commonStyle = "m-3 ml-6 text-brand-blue-800"
 
   return (
     
@@ -15,23 +17,23 @@ function AboutMe() {
 
         <AboutMeCard
           title='Quién Soy'
-          icon={cv}
+          icon={<IconBxsUserCircle className={`h-auto min-w-12 lg:min-w-16 ${commonStyle}`}/>}
           text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
         />
         <AboutMeCard
-          title='Quién Soy'
-          icon={cv}
+          title='Responsive Desing'
+          icon={<IconResponsive className={`h-auto min-w-12 lg:min-w-16 ${commonStyle}`}/>}
           text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
         />
-        <AboutMeCard
-          title='Quién Soy'
-          icon={cv}
-          text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
+        <AboutMeCard 
+          title='Soft Skills'
+          icon={<IconUserGroup className={`h-auto min-w-12 lg:min-w-16 ${commonStyle}`}  />}
+          text='Cuento con habilidades como comunicación efectiva, trabajo en equipo y resolución de problemas. Estas soft skills me permiten colaborar eficientemente en proyectos, buscando siempre soluciones creativas e innovadoras.'
         />
         <AboutMeCard
-          title='Quién Soy'
-          icon={cv}
-          text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
+          title='Estudios'
+          icon={<IconBook className={`h-auto min-w-12 lg:min-w-16 ${commonStyle}`}/>}
+          text='Mi formación incluye estudios especializados en HTML, CSS, JavaScript y React, con un enfoque en el diseño de interfaces web accesibles y funcionales para garantizar una experiencia de usuario óptima.'
         />
 
       </section>

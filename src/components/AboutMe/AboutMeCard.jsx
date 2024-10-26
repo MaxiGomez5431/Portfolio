@@ -14,13 +14,11 @@ function AboutMeCard({title, icon, text}) {
       >
         
         <h4 className='text-2xl lg:text-3xl font-bold mt-3 text-brand-blue-800'>{title}</h4>
-
-        <div className='flex justify-around items-center'>
-          <img className='w-12 h-12 lg:w-20 lg:h-20 m-2' src={icon}></img>
+        
+        <div className='flex'>
+          {icon}
           <p className='text-base text-left lg:text-lg m-3 text-brand-blue-950'> {text} </p>
         </div>
-
-        <IconArrowDown></IconArrowDown>
         
       </div>
 
