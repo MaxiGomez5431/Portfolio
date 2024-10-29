@@ -21,6 +21,9 @@ export default {
         '950': '#122f59',
         },
       },
+      boxShadow: {
+        'about-me': '-4px 0px 0px #1258bb', 
+      },
     },
   },
   plugins: [],

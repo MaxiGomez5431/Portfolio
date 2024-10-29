@@ -47,7 +47,7 @@ function AboutMeCard({title, icon, text}) {
       <div className='
         z-50 text-center 
         mt-3 mb-3 lg:mr-3 lg:ml-3 
-        hover:translate-x-2 duration-500 ease-in-out
+        hover:shadow-about-me duration-300 ease-in-out
         bg-brand-blue-50 rounded-2xl'
       >
         
@@ -59,13 +59,6 @@ function AboutMeCard({title, icon, text}) {
         </div>
         
       </div>
-
-      {/* Sombra */}
-      <div className="
-        absolute top-0 left-0 right-0 bottom-0 z-0
-        mt-3 mb-3 lg:mr-3 lg:ml-3 
-        bg-brand-blue-800 rounded-2xl"
-      /> 
 
     </div>
   )
