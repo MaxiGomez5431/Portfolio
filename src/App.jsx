@@ -10,17 +10,17 @@ function App() {
  
 
   return (
-    <>
-      <main className='container mx-auto max-w-7xl px-5'>
-        
+    <main className='relative'>
+
+      <div className='container mx-auto max-w-7xl px-5'>
         <Hero/>
         <AboutMe/>
         <Projects/>
         <Skills/>
         <Contact/>
-
-      </main>
-    </>
+      </div>
+      
+    </main>
   )
 }
 

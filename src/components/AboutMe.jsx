@@ -42,10 +42,10 @@ function AboutMe() {
 function AboutMeCard({title, icon, text}) {
  
   return (
-    <div className="relative flex">
+    <div className="flex">
       
       <div className='
-        z-50 text-center 
+        z-50 text-center
         mt-3 mb-3 lg:mr-3 lg:ml-3 
         hover:shadow-about-me duration-300 ease-in-out
         bg-brand-blue-50 rounded-2xl'

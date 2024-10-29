@@ -37,7 +37,7 @@ function SkillTag ({logo, text}) {
   });
 
   return (
-    <div className="flex justify-center items-center bg-brand-blue-50 w-auto h-auto rounded-2xl pl-2 pr-2 m-1">
+    <div className="flex justify-center items-center bg-brand-blue-200 w-auto h-auto rounded-2xl pl-2 pr-2 m-1">
       {styledLogo}
       <p className="font-bold text-brand-blue-950 pl-1">{text}</p>
     </div>
