@@ -2,9 +2,24 @@ import SocialIcons from './SocialIcons'
 import { IconMail, IconCellphone } from './Icons'
 import phoneImage from '../assets/images/phone.png'
 import mailImage from '../assets/images/mail.png'
+import { useState } from 'react'
+import Tooltip from './tooltip'
 
 function Contact() {
- 
+
+  const [selectedNumber, setSelectedNumber] = useState(0)
+
+  const copyTextToClipboard = async (text, number) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setSelectedNumber(number)
+      setTimeout(() => {
+        setSelectedNumber(0)
+      }, 1500)
+    } catch (err) {
+      console.error("Error al copiar al portapapeles: ", err);
+    }
+  };
 
   return (
     
@@ -26,16 +41,27 @@ function Contact() {
 
           <div className='m-3'>
 
-            <div className='flex items-center'>
+            <div className='flex items-center relative cursor-pointer'  onClick={() => {copyTextToClipboard("maxigomez02@hotmail.com", 1)}}>
               <IconMail className='m-1 h-10 w-10 text-brand-blue-950'/>
               <img src={mailImage} className='h-10'/>
+
+              <Tooltip
+                tooltipNumber={1}
+                selectedNumber={selectedNumber}
+                text={"Copiado al portapapeles"}
+              />
             </div>
 
-            <div className='flex items-center'>
+            <div className='flex items-center relative cursor-pointer' onClick={() => {copyTextToClipboard("+54 11 66016895", 2)}}>
               <IconCellphone className='m-1 h-10 w-10 text-brand-blue-950'/>
               <img src={phoneImage} className='h-10'/>
-            </div>
 
+              <Tooltip
+                tooltipNumber={2}
+                selectedNumber={selectedNumber}
+                text={"Copiado al portapapeles"}
+              />
+            </div>
 
             <SocialIcons/>
           </div>

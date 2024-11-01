@@ -8,23 +8,23 @@ function Projects() {
     <>
       <Title>Mis projectos</Title>
 
-      <section>
+      <section className="flex justify-center flex-wrap ">
         <ProjectCard
           image={place1}
           title={"Netflix clon"}
-          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
+          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
         />
 
         <ProjectCard
           image={place1}
           title={"Netflix clon"}
-          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
+          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
         />
 
         <ProjectCard
           image={place1}
           title={"Netflix clon"}
-          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
+          text= {"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500"}
         />
 
       </section>
