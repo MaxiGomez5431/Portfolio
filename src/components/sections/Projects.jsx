@@ -1,5 +1,5 @@
-import Title from "./Title"
-import place1 from "../assets/images/place1.png"
+import Title from "../ui/Title"
+import place1 from "../../assets/images/place1.png"
 
 function Projects() {
  

@@ -1,5 +1,5 @@
-import Title from './Title'
-import {IconUserGroup, IconBxsUserCircle, IconResponsive, IconBook} from './Icons'
+import Title from '../ui/Title'
+import {IconUserGroup, IconBxsUserCircle, IconResponsive, IconBook} from '../ui/Icons'
 
 function AboutMe() {
  

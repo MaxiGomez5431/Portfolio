@@ -1,9 +1,9 @@
-import SocialIcons from './SocialIcons'
-import { IconMail, IconCellphone } from './Icons'
-import phoneImage from '../assets/images/phone.png'
-import mailImage from '../assets/images/mail.png'
+import SocialIcons from '../ui/SocialIcons'
+import { IconMail, IconCellphone } from '../ui/Icons'
+import phoneImage from '../../assets/images/phone.png'
+import mailImage from '../../assets/images/mail.png'
 import { useState } from 'react'
-import Tooltip from './tooltip'
+import Tooltip from '../ui/tooltip'
 
 function Contact() {
 

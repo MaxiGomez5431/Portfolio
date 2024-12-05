@@ -1,6 +1,6 @@
-import portfolioImage from "../assets/images/portfolio-image.jpg"
-import ellipseMobile from "../assets/svg/Ellipse1-Mobile.svg"
-import SocialIcons from "./SocialIcons"
+import portfolioImage from "../../assets/images/portfolio-image.jpg"
+import ellipseMobile from "../../assets/svg/Ellipse1-Mobile.svg"
+import SocialIcons from "../ui/SocialIcons"
 
 function Hero() {
 

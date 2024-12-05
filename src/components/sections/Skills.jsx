@@ -1,11 +1,11 @@
-import Title from "./Title"
+import Title from "../ui/Title"
 import { cloneElement } from "react";
 import {
   IconBxlJavascript, IconBxlHtml5, IconBxlCss3, 
   IconOracle, IconBxlPostgresql, IconBxlPython,
   IconBxlJava, IconBxlReact, IconBxlNodejs, 
   IconGithub, 
-} from './Icons'
+} from '../ui/Icons'
 
 function Skills() {
 
