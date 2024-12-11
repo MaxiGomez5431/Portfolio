@@ -8,7 +8,7 @@ function Projects() {
     <>
       <Title>Mis projectos</Title>
 
-      <section className="flex justify-center flex-wrap ">
+      <section className="flex justify-center flex-wrap w-full">
         <ProjectCard
           image={place1}
           title={"Netflix clon"}

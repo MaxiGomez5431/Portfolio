@@ -13,7 +13,7 @@ function Skills() {
     <>
       <Title>Skills</Title>
 
-      <section className="flex flex-wrap m-3 justify-evenly">
+      <section className="flex flex-wrap m-3 justify-center w-full">
         <SkillTag logo={<IconBxlJavascript/>} text="JavaScript"/>
         <SkillTag logo={<IconBxlHtml5/>} text="HTML"/>
         <SkillTag logo={<IconBxlCss3/>} text="CSS"/>
@@ -23,6 +23,7 @@ function Skills() {
         <SkillTag logo={<IconBxlJava/>} text="Java"/>
         <SkillTag logo={<IconOracle/>} text="Oracle"/>
         <SkillTag logo={<IconBxlPostgresql/>} text="Postgresql"/>
+        <SkillTag logo={<IconGithub/>} text="GitHub"/>
       </section>
       
     </>

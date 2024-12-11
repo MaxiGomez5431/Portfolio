@@ -14,8 +14,8 @@ function Hero() {
       </div>
 
       <div className="flex justify-center text-center flex-col mt-5 lg:mt-20">
-        <h2 className="text-xl text-brand-blue-900 font-semibold lg:text-3xl">Maximiliano Tomás Gomez</h2>
-        <h1 className="text-2xl text-brand-blue-600 font-bold lg:text-4xl">{"< Web Developer />"}</h1>
+        <h2 className="text-2xl text-brand-blue-900 font-semibold lg:text-3xl">Maximiliano Tomás Gomez</h2>
+        <h1 className="text-3xl text-brand-blue-600 font-bold lg:text-4xl">{"< Web Developer />"}</h1>
 
         <SocialIcons style='h-10 w-10 lg:h-14 lg:w-14'/>
       </div>
