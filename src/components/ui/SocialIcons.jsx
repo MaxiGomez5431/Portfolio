@@ -7,7 +7,7 @@ function SocialIcons({style}) {
  
 
   return (
-    <div className="flex justify-center items-center mt-3">
+    <div className={`flex justify-center items-center mt-3 ${style}`}>
       <a href="https://www.linkedin.com/in/maximiliano-t-gomez/" target="_blank" >
         <IconLinkedin className={iconStyle}/>
       </a>

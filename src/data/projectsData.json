@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "image": "images/place1.png",
+    "title": "Netflix Clon",
+    "text": "Una página tratando de imitar el diseño de la página del servicio de suscripción mensual Netflix",
+    "github": "https://github.com/",
+    "url": "https://netflix.com",
+    "technologies": ["React", "Nodejs", "Git", "Python", "Html5", "Css3", "Oracle", "Java"]
+  },
+  {
+    "id": 2,
+    "image": "images/place2.jpg",
+    "title": "Tienda Online",
+    "text": "Un sistema completo de comercio electrónico con carrito, los sims 4 es un juego lanzado en 155'6 en octubre de ese mismo año walt disney compró mayotori, un juego de ",
+    "github": "https://github.com/",
+    "url": "https://tienda-online.com",
+    "technologies": ["React", "Nodejs", "Git"]
+  },
+  {
+    "id": 3,
+    "image": "images/place2.jpg",
+    "title": "Tienda Online",
+    "text": "Un sistema completo de comercio electrónico con carrito, los sims 4 es un juego lanzado en 155'6 en octubre de ese mismo año walt disney compró mayotori, un juego de ",
+    "github": "https://github.com/",
+    "url": "https://tienda-online.com",
+    "technologies": ["React", "Nodejs", "Git"]
+  }
+]

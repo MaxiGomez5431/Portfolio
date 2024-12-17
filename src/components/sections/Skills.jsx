@@ -1,11 +1,6 @@
 import Title from "../ui/Title"
 import { cloneElement } from "react";
-import {
-  IconBxlJavascript, IconBxlHtml5, IconBxlCss3, 
-  IconOracle, IconBxlPostgresql, IconBxlPython,
-  IconBxlJava, IconBxlReact, IconBxlNodejs, 
-  IconGithub, 
-} from '../ui/Icons'
+import { techIcons } from "../ui/Icons";
 
 function Skills() {
 
@@ -14,16 +9,15 @@ function Skills() {
       <Title>Skills</Title>
 
       <section className="flex flex-wrap m-3 justify-center w-full">
-        <SkillTag logo={<IconBxlJavascript/>} text="JavaScript"/>
-        <SkillTag logo={<IconBxlHtml5/>} text="HTML"/>
-        <SkillTag logo={<IconBxlCss3/>} text="CSS"/>
-        <SkillTag logo={<IconBxlReact/>} text="React"/>
-        <SkillTag logo={<IconBxlNodejs/>} text="Node.js"/>
-        <SkillTag logo={<IconBxlPython/>} text="Python"/>
-        <SkillTag logo={<IconBxlJava/>} text="Java"/>
-        <SkillTag logo={<IconOracle/>} text="Oracle"/>
-        <SkillTag logo={<IconBxlPostgresql/>} text="Postgresql"/>
-        <SkillTag logo={<IconGithub/>} text="GitHub"/>
+        {
+        Object.keys(techIcons).map((tech) => (
+          <SkillTag 
+            key={tech} 
+            logo={techIcons[tech]} 
+            text={tech} 
+          />
+        ))
+        }
       </section>
       
     </>
@@ -34,7 +28,7 @@ function Skills() {
 function SkillTag ({logo, text}) {
 
   const styledLogo = cloneElement(logo, {
-    className: "w-10 h-10 text-brand-blue-950", // Estilos estándar
+    className: "w-10 h-10 text-brand-blue-950",
   });
 
   return (

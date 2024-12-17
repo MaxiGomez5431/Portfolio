@@ -1,5 +1,22 @@
 import * as React from "react";
 
+const standarStyle = "w-8 h-8 text-brand-blue-950"
+
+export const techIcons = {
+  "Javascript": <IconBxlJavascript className={standarStyle}/>,
+  "Html5": <IconBxlHtml5 className={standarStyle}/>,
+  "Css3": <IconBxlCss3 className={standarStyle}/>,
+  "Oracle": <IconOracle className={standarStyle}/>,
+  "Postgresql": <IconBxlPostgresql className={standarStyle}/>,
+  "Python": <IconBxlPython className={standarStyle}/>,
+  "Java": <IconBxlJava className={standarStyle}/>,
+  "React": <IconBxlReact className={standarStyle}/>,
+  "Nodejs": <IconBxlNodejs className={standarStyle}/>, 
+  "Git": <IconBxlGit className={standarStyle}/>, 
+};
+
+//UI and similars:
+
 export function IconLinkedin(props) {
   return (
     <svg
@@ -267,4 +284,3 @@ export function IconBxlGit(props) {
     </svg>
   );
 }
-

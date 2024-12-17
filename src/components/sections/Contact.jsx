@@ -1,5 +1,5 @@
-import EmailForm from '../ui/EmailForm'
-import ContactInfo from '../ui/ContactInfo'
+import EmailForm from '../ui/contact/EmailForm'
+import ContactInfo from '../ui/contact/ContactInfo'
 
 function Contact() {
 
