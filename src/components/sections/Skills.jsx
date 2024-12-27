@@ -8,7 +8,7 @@ function Skills() {
     <>
       <Title>Skills</Title>
 
-      <section className="flex flex-wrap m-3 justify-center w-full">
+      <section className="flex flex-wrap justify-center w-full">
         {
         Object.keys(techIcons).map((tech) => (
           <SkillTag 

@@ -9,7 +9,10 @@ export default function ProjectCard({image, title, text, url, github, technologi
     <>
       <div className="flex justify-between items-center flex-col border rounded-xl max-w-96 m-5 lg:flex-row lg:max-w-full">
         
-        <img src={image} alt={`image of the front page for the ${title} proyect`} className="rounded-t-xl w-auto h-auto lg:max-w-3xl lg:max-h-72 lg:rounded-xl lg:m-4"/>
+        <img src={image} 
+          alt={`image of the front page for the ${title} proyect`} 
+          className="rounded-t-xl w-auto h-auto lg:max-w-lg lg:max-h-72 lg:rounded-xl lg:m-4"
+        />
 
         <div className="flex items-center justify-between text-center flex-col m-2 lg:justify-around h-full w-10/12">
           <h3 className="text-lg font-bold text-brand-blue-950 lg:text-2xl m-1">{title}</h3>
