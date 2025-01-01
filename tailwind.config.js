@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -20,6 +21,7 @@ export default {
         '900': '#154d93',
         '950': '#122f59',
         },
+        'dark-mode': '#121212'
       },
       boxShadow: {
         'about-me': '-4px 0px 0px #1258bb', 

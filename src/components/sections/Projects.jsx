@@ -6,7 +6,7 @@ function Projects() {
 
   return (
     <>
-      <Title>Mis projectos</Title>
+      <Title id="projects">Mis projectos</Title>
 
       <section className="flex justify-center flex-wrap w-full">
 

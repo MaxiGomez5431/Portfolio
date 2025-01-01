@@ -1,15 +1,15 @@
 import { IconCheckCircle, IconLoading, IconErrorCircle } from '../Icons';
 
 export default function EmailResponses ({state, children}) {
-  const iconStyle = "h-16 w-16 text-brand-blue-950 m-1"
-  const textStyle = "text-brand-blue-950 m-1"
+  const iconStyle = "h-16 w-16 m-1"
+  const textStyle = "text-brand-blue-950 dark:text-brand-blue-100 m-1"
 
   return (
-    <div className='flex flex-col justify-center items-center w-10/12 lg:w-5/12 h-auto border p-3 m-3 border-brand-blue-950 rounded-xl'>
+    <div className='flex flex-col justify-center items-center w-10/12 lg:w-5/12 h-auto border p-3 m-3 border-brand-blue-950 dark:border-brand-blue-100 rounded-xl'>
        
       {state === "loading" ? (
         <>
-          <IconLoading className={`${iconStyle} animate-spin`} />
+          <IconLoading className={`${iconStyle} animate-spin text-brand-blue-950 dark:text-brand-blue-100 `} />
           <p className={textStyle}>Enviando Email</p>
         </>
       ) : state === "succesful" ? (
