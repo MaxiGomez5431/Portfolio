@@ -13,7 +13,7 @@ export default function DarkModeBtn() {
   }, [darkMode]);
 
   return (
-    <button className="flex justify-center items-center w-1/12" onClick={() => setDarkMode(!darkMode)}>
+    <button className="flex justify-center items-center w-auto" onClick={() => setDarkMode(!darkMode)}>
       <IconDarkMode 
         className="flex justify-center items-center 
         min-w-7 min-h-7 lg:w-10 lg:h-10 

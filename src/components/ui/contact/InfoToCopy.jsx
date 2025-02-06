@@ -1,29 +1,39 @@
-import Tooltip from 'rc-tooltip'
-import 'rc-tooltip/assets/bootstrap.css'
+import { useState } from "react";
+import copied from '/images/copied.png'
 
-export default function InfoToCopy({textToCopy, children}) {
-  
-  const copyTextToClipboard = async (text) => {
+export default function InfoToCopy({ textToCopy, children }) {
+  const [infoIsCopied, setInfoIsCopied] = useState(false);
+
+  const copyTextToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(textToCopy);
+      setInfoIsCopied(true);
 
+      setTimeout(() => {
+        setInfoIsCopied(false);
+      }, 2000);
     } catch (err) {
       console.error("Error al copiar al portapapeles: ", err);
     }
   };
-  
+
   return (
-    <Tooltip
-        placement="top"
-        trigger={["click"]}
-        overlay="Copiado al portapapeles"
-      >
-        <div
-          className="flex items-center relative cursor-pointer "
-          onClick={() => copyTextToClipboard(textToCopy)}
-        >
-          {children}
-        </div>
-      </Tooltip>
-  )
+    <div
+      className="flex items-center relative cursor-pointer"
+      onClick={copyTextToClipboard}
+    >
+      {!infoIsCopied 
+        ? 
+          children 
+        : 
+          <div className='m-1 p-1 border border-black rounded-xl flex justify-center items-center w-60 bg-brand-blue-200'>
+              <img
+                src={copied}
+                alt="Mail"
+                className={`h-4 m-2`}
+              />
+          </div>
+      }
+    </div>
+  );
 }
