@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import EmailResponses from './EmailResponses';
+import { useTranslation } from "react-i18next";
 
 export default function EmailForm() {
   const [sendState, setSendState] = useState("")
@@ -9,6 +10,7 @@ export default function EmailForm() {
     email: '',
     message: '',
   });
+  const { t } = useTranslation();
   
   const handleChange = (e) => {
     setFormData({
@@ -46,7 +48,7 @@ export default function EmailForm() {
             onClick={() => {setSendState("")}}
             className="p-2 m-1 w-8/12 bg-brand-blue-600 font-bold text-brand-blue-50 rounded-xl hover:bg-brand-blue-700 transition-colors"
           >
-            Enviar otro Email
+            {t("SendAnother")}
           </button>
         </EmailResponses>
 
@@ -62,7 +64,7 @@ export default function EmailForm() {
           <input
             type="text"
             name="name"
-            placeholder="Nombre"
+            placeholder={t("Name")}
             value={formData.name}
             onChange={handleChange}
             required
@@ -79,7 +81,7 @@ export default function EmailForm() {
           />
           <textarea
             name="message"
-            placeholder="Mensaje"
+            placeholder={t("Message")}
             value={formData.message}
             onChange={handleChange}
             required
@@ -89,7 +91,7 @@ export default function EmailForm() {
             type="submit"
             className="p-2 m-1 w-8/12 bg-brand-blue-600 font-bold text-brand-blue-50 rounded-xl hover:bg-brand-blue-700 transition-colors"
           >
-            Enviar Mensaje
+            {t("Send")}
           </button>
         </form>
       )

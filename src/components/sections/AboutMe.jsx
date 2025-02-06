@@ -1,36 +1,38 @@
 import Title from '../ui/Title'
 import {IconUserGroup, IconBxsUserCircle, IconResponsive, IconBook} from '../ui/Icons'
+import { useTranslation } from "react-i18next";
 
 function AboutMe() {
- 
+  const { t } = useTranslation();
+
   let commonStyle = "h-auto min-w-12 lg:min-w-16m-3 ml-6 text-brand-blue-800 dark:text-brand-blue-300"
 
   return (
     
     <>
-      <Title id="about-me">Sobre mí</Title>
+      <Title id="about-me">{t("AboutMe")}</Title>
 
       <section className='grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2'>
 
         <AboutMeCard
-          title='Quién Soy'
+          title={t("WhoAmI")}
           icon={<IconBxsUserCircle className={commonStyle}/>}
-          text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
+          text={t("WhoAmIText")}
         />
         <AboutMeCard
           title='Responsive Desing'
           icon={<IconResponsive className={commonStyle}/>}
-          text='Utilizo técnicas modernas de CSS y frameworks como Tailwind o Bootstrap para asegurar que los sitios se adapten fluidamente a diferentes tamaños de pantalla, ofreciendo siempre la mejor experiencia de usuario.'
+          text={t("ResponsiveText")}
         />
         <AboutMeCard 
           title='Soft Skills'
           icon={<IconUserGroup className={commonStyle}  />}
-          text='Cuento con habilidades como comunicación efectiva, trabajo en equipo y resolución de problemas. Estas soft skills me permiten colaborar eficientemente en proyectos, buscando siempre soluciones creativas e innovadoras.'
+          text={t("SoftSkillsText")}
         />
         <AboutMeCard
-          title='Estudios'
+          title={t("Studies")}
           icon={<IconBook className={commonStyle}/>}
-          text='Mi formación incluye estudios especializados en HTML, CSS, JavaScript y React, con un enfoque en el diseño de interfaces web accesibles y funcionales para garantizar una experiencia de usuario óptima.'
+          text={t("StudiesText")}
         />
 
       </section>

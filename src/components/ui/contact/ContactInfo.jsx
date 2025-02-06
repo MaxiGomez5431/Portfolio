@@ -1,8 +1,6 @@
 import SocialIcons from '../../ui/SocialIcons'
-
 import phoneImage2 from '/images/phone2.png'
 import mailImage2 from '/images/mail2.png'
-
 import InfoToCopy from './InfoToCopy'
 
 export default function ContactInfo() {

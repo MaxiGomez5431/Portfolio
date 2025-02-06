@@ -5,6 +5,7 @@ import Projects from './components/sections/Projects'
 import Skills from './components/sections/Skills'
 import Contact from './components/sections/Contact'
 import NavBar from './components/sections/NavBar'
+import '../i18n'
 
 
 function App() {

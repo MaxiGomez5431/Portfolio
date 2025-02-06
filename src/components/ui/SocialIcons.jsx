@@ -1,10 +1,13 @@
-
+import DownloadCVButton from "../ui/DownloadCVButton";
 import {IconLinkedin, IconGithub} from "./Icons"
+import { useTranslation } from "react-i18next";
 
-  const iconStyle = "h-10 w-10 m-1 lg:h-12 lg:w-12 cursor-pointer duration-200 text-brand-blue-950 hover:text-brand-blue-600 dark:text-brand-blue-100 dark:hover:text-brand-blue-600"
+
 
 function SocialIcons({style}) {
- 
+  const { t } = useTranslation();
+  const iconStyle = "h-10 w-10 m-1 lg:h-12 lg:w-12 cursor-pointer duration-200 text-brand-blue-950 hover:text-brand-blue-600 dark:text-brand-blue-100 dark:hover:text-brand-blue-600"
+
 
   return (
     <div className={`flex justify-center items-center mt-3 ${style}`}>
@@ -15,17 +18,7 @@ function SocialIcons({style}) {
         <IconGithub className={iconStyle}/>
       </a>
 
-      <button className="
-        h-10 p-1 m-1
-        rounded-xl 
-        text-sm font-bold text-brand-blue-50 dark:text-brand-blue-950
-        duration-200
-        bg-brand-blue-950 hover:bg-brand-blue-600
-        dark:bg-brand-blue-100 dark:hover:bg-brand-blue-600" 
-        value="DescargarCV"
-        >
-          Descargar CV
-      </button>
+      <DownloadCVButton/>
     </div>
     
 

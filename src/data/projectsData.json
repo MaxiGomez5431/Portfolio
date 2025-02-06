@@ -1,29 +1,14 @@
 [
   {
     "id": 1,
-    "image": "images/place1.png",
-    "title": "Netflix Clon",
-    "text": "Una página tratando de imitar el diseño de la página del servicio de suscripción mensual Netflix",
-    "github": "https://github.com/",
-    "url": "https://netflix.com",
-    "technologies": ["React", "Nodejs", "Git", "Python", "Html5", "Css3", "Oracle", "Java"]
-  },
-  {
-    "id": 2,
-    "image": "images/place2.jpg",
-    "title": "Tienda Online",
-    "text": "Un sistema completo de comercio electrónico con carrito, los sims 4 es un juego lanzado en 155'6 en octubre de ese mismo año walt disney compró mayotori, un juego de ",
-    "github": "https://github.com/",
-    "url": "https://tienda-online.com",
-    "technologies": ["React", "Nodejs", "Git"]
-  },
-  {
-    "id": 3,
-    "image": "images/place2.jpg",
-    "title": "Tienda Online",
-    "text": "Un sistema completo de comercio electrónico con carrito, los sims 4 es un juego lanzado en 155'6 en octubre de ese mismo año walt disney compró mayotori, un juego de ",
-    "github": "https://github.com/",
-    "url": "https://tienda-online.com",
-    "technologies": ["React", "Nodejs", "Git"]
+    "image": "images/tmdb_explorer.png",
+    "title_es": "TMDB Explorer",
+    "title_en": "TMDB Explorer",
+    "text_es": "Aplicación web que utiliza la API de TMDB para explorar películas y series. Incluye búsqueda avanzada, filtros por género y detalles completos. Desarrollado con React y Tailwind CSS para practicar integración de APIs y diseño responsivo.",
+    "text_en": "Web application using the TMDB API to explore movies and TV shows. Features advanced search, genre filters, and detailed media information. Built with React and Tailwind CSS to practice API integration and responsive design.",
+    "github": "https://github.com/MaxiGomez5431/tmdb-explorer",
+    "url": "https://tmdb-explorer-kappa.vercel.app/",
+    "technologies": ["React", "Git", "JavaScript", "Html5", "Css3", "Tailwind"]
   }
+  
 ]

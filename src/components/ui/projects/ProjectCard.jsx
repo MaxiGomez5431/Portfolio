@@ -1,10 +1,10 @@
 import { techIcons } from "../Icons"
 import { ProjectCardButton } from "./ProjectCardButton"
-
-{/**Si tengo ganas agregar lo de las formas entre medio de los proyectos, se me ocurri+o que pueda tener uno de entre 4 estilos para que la forma se ubique aleatoreamente dentro de las 4 esquinas, o que solo tenga dos, una contraria a la otra, asi no se superponen*/}
+import { useTranslation } from "react-i18next"; 
 
 export default function ProjectCard({image, title, text, url, github, technologies}) {
-  
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <div className="flex justify-between items-center flex-col border rounded-xl max-w-96 m-5 lg:flex-row lg:max-w-full">
@@ -19,8 +19,8 @@ export default function ProjectCard({image, title, text, url, github, technologi
           <p className="text-brand-blue-950 dark:text-brand-blue-100 lg:text-lg m-1">{text}</p>
 
           <div className="m-3">
-            <ProjectCardButton url={url} text={"Visitar página"}/>
-            <ProjectCardButton url={github} text={"Ver código"}/>
+            <ProjectCardButton url={url} text={t("Visit")}/>
+            <ProjectCardButton url={github} text={t("Code")}/>
           </div>
         </div>
 

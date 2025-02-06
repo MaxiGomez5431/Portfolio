@@ -13,6 +13,7 @@ export const techIcons = {
   "React": <IconBxlReact className={standarStyle}/>,
   "Nodejs": <IconBxlNodejs className={standarStyle}/>, 
   "Git": <IconBxlGit className={standarStyle}/>, 
+  "Tailwind": <Tailwind className={standarStyle}/>
 };
 
 //UI and similars:
@@ -187,6 +188,45 @@ export function IconDarkMode(props) {
   );
 }
 
+export function BarsOutline(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      className={standarStyle}
+      {...props}
+    >
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth="2"
+        d="M5 7h14M5 12h14M5 17h14"
+      ></path>
+    </svg>
+  )
+}
+
+export function CrossFilled(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      className={standarStyle}
+      {...props}
+    >
+      <g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
+        <path d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06"></path>
+        <path d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0"></path>
+      </g>
+    </svg>
+  )
+}
+
 //Programing lenguages and similars:
 
 export function IconBxlJavascript(props) {
@@ -340,3 +380,21 @@ export function IconBxlGit(props) {
     </svg>
   );
 }
+
+export function Tailwind(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173a3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921c-.969 1.379-2.44 2.207-4.259 1.231c-1.253-.673-2.19-3.438-5.959-3.318M6.8 11.979A4.77 4.77 0 0 0 2 16.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921c-.97 1.379-2.44 2.208-4.259 1.231c-1.253-.673-2.19-3.443-5.963-3.317"
+      ></path>
+    </svg>
+  )
+}
+
