@@ -21,6 +21,7 @@ function Projects() {
               url={project.url}
               github={project.github}
               technologies={project.technologies}
+              backend={project.isBackEnd}
             />
           ))
         }

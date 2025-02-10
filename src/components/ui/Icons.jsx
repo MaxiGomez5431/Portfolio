@@ -6,14 +6,16 @@ export const techIcons = {
   "Javascript": <IconBxlJavascript className={standarStyle}/>,
   "Html5": <IconBxlHtml5 className={standarStyle}/>,
   "Css3": <IconBxlCss3 className={standarStyle}/>,
+  "React": <IconBxlReact className={standarStyle}/>,
+  "Tailwind": <Tailwind className={standarStyle}/>,
+  "Nodejs": <IconBxlNodejs className={standarStyle}/>, 
+  "Express": <Express className={standarStyle}/>,
   "Oracle": <IconOracle className={standarStyle}/>,
   "Postgresql": <IconBxlPostgresql className={standarStyle}/>,
+  "MongoDB": <MongoDb className={standarStyle}/>,
   "Python": <IconBxlPython className={standarStyle}/>,
   "Java": <IconBxlJava className={standarStyle}/>,
-  "React": <IconBxlReact className={standarStyle}/>,
-  "Nodejs": <IconBxlNodejs className={standarStyle}/>, 
   "Git": <IconBxlGit className={standarStyle}/>, 
-  "Tailwind": <Tailwind className={standarStyle}/>
 };
 
 //UI and similars:
@@ -393,6 +395,42 @@ export function Tailwind(props) {
       <path
         fill="currentColor"
         d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173a3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921c-.969 1.379-2.44 2.207-4.259 1.231c-1.253-.673-2.19-3.438-5.959-3.318M6.8 11.979A4.77 4.77 0 0 0 2 16.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.73 5.73 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921c-.97 1.379-2.44 2.208-4.259 1.231c-1.253-.673-2.19-3.443-5.963-3.317"
+      ></path>
+    </svg>
+  )
+}
+
+export function MongoDb(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M7.294 11.804c0-3.966 2.14-6.417 3.533-8.014C11.501 3.02 12 2.447 12 2c0 .447.5 1.019 1.172 1.79c1.394 1.597 3.534 4.048 3.534 8.014c0 4.326-2.75 6.95-4.077 7.765L12.37 22h-.707l-.29-2.43c-1.326-.813-4.079-3.437-4.079-7.766m4.064 6.7L12 9.06l.649 9.446l-.65.75z"
+        clipRule="evenodd"
+      ></path>
+    </svg>
+  )
+}
+
+export function Express(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="1em"
+      height="1em"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M24 18.588a1.53 1.53 0 0 1-1.895-.72l-3.45-4.771l-.5-.667l-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92l-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83l3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27c1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.08 4.08 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.42 5.42 0 0 1-2.589 3.957a6.27 6.27 0 0 1-7.306-.933a6.58 6.58 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88 88 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278c-2.882-.04-4.944 2.094-5.071 5.264z"
       ></path>
     </svg>
   )
