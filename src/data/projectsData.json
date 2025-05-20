@@ -9,29 +9,5 @@
     "github": "https://github.com/MaxiGomez5431/tmdb-explorer",
     "url": "https://tmdb-explorer-kappa.vercel.app/",
     "technologies": ["React", "Git", "JavaScript", "Html5", "Css3", "Tailwind"]
-  },
-  {
-    "id": 2,
-    "image": "images/virtual_store.png",
-    "title_es": "Tienda Virtual",
-    "title_en": "Virtual Store",
-    "text_es": "Este proyecto consiste en una página web interactiva que utiliza una API personalizada para mostrar una variedad de productos, sus componentes y los fabricantes asociados. Desarrollado en equipo durante mi carrera universitaria.",
-    "text_en": "This project is an interactive web page that uses a custom API to display a wide range of products, their components, and associated manufacturers. Developed as a team project during my university studies.",
-    "github": "https://github.com/AlexisChebeste/Empresa-TM",
-    "url": "https://empresa-tm.vercel.app/",
-    "technologies": ["React", "Git", "JavaScript", "Html5", "Css3", "Tailwind"]
-  },
-  {
-    "id": 3, 
-    "image": "images/virtual_store.png",
-    "title_es": "Tienda Virtual BackEnd",
-    "title_en": "Virtual Store BackEnd",
-    "text_es": "Este proyecto consiste en el backend Rest API del proyecto 'Tienda Virtual', utilizando la base de datos no relacional, MongoDB, tiene incorporado las funcionalidades GET, PUT y DELETE para los documentos de productos, componentes y fabricantes. Desarrollado en equipo durante mi carrera universitaria.",
-    "text_en": "This project consists of the Rest API backend for the 'Virtual Store' project. Using a non-relational database, MongoDB, it incorporates GET, PUT, and DELETE functionalities for product, component, and manufacturer documents. Developed as a team project during my university studies.",
-    "github": "https://github.com/AlexisChebeste/Empresa-Tm-Backend",
-    "url": "https://empresa-tm-backend-production.up.railway.app/",
-    "isBackEnd": true,
-    "technologies": ["Nodejs", "Express", "MongoDB", "Git", "Javascript"]
   }
-
 ]
